@@ -19,12 +19,12 @@ const routes = [{
         component: Courses,
     },
     {
-        path: '/semesters/fall',
+        path: '/semesters/:fall',
         name: 'Semester2',
         component: Semester,
     },
     {
-        path: '/semesters/spring',
+        path: '/semesters/:spring',
         name: 'Semester',
         component: Semester,
     },
