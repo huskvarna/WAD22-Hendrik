@@ -1,6 +1,7 @@
 <template>
 <div>
 <h3> Courses  </h3>
+<div class="tableContainer">
 <table>
           <tr>
             <th>Code</th>
@@ -9,14 +10,15 @@
             <th>Credits</th>
             <th>Description</th>
           </tr>
-          <tr v-for="course in courses" :key="course.id">
+          <tr class="column" v-for="course in courses" :key="course.id">
             <td>{{ course.code }} </td>
             <td>{{ course.title}} </td>
              <td> {{ course.semester}}</td>
             <td>{{ course.credits }} </td>
-            <td>{{ course.description }} </td> 
+            
           </tr>
 </table> 
+</div>
 </div>
 </template>
 
@@ -44,5 +46,22 @@ export default {
 </script>
 
 <style scoped>
-
+  th {
+  background: darkcyan
+}
+td {
+  background: cadetblue
+}
+th, td {
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+}
+.tableContainer {
+  background: white;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
 </style>
