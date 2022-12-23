@@ -15,7 +15,8 @@
             <td>{{ course.title}} </td>
              <td> {{ course.semester}}</td>
             <td>{{ course.credits }} </td>
-            
+            <td v-if="course.description !== ''">{{ course.description }} </td>
+            <td v-else>{{"No course description is provided"}}</td>
           </tr>
 </table> 
 </div>
