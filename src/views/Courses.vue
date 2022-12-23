@@ -9,8 +9,13 @@
             <th>Credits</th>
             <th>Description</th>
           </tr>
-
-
+          <tr v-for="course in courses" :key="course.id">
+            <td>{{ course.code }} </td>
+            <td>{{ course.title}} </td>
+             <td> {{ course.semester}}</td>
+            <td>{{ course.credits }} </td>
+            <td>{{ course.description }} </td> 
+          </tr>
 </table> 
 </div>
 </template>
