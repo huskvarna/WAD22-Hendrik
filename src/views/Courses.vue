@@ -13,7 +13,9 @@
           <tr class="column" v-for="course in courses" :key="course.id">
             <td>{{ course.code }} </td>
             <td>{{ course.title}} </td>
-             <td> {{ course.semester}}</td>
+            <td>
+              <router-link v-if="course.semester=='spring'" to="/semesters/spring">{{ course.semester}}</router-link>
+              <router-link v-else to="/semesters/fall"> {{ course.semester}}</router-link> </td>
             <td>{{ course.credits }} </td>
             <td v-if="course.description !== ''">{{ course.description }} </td>
             <td v-else>{{"No course description is provided"}}</td>
