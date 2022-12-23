@@ -1,6 +1,6 @@
 <template>
 <div>
-<h3>{{getSemester()}}</h3>
+<h3>{{getSemester()}}<a><router-link to="/">{{backToCourses()}}</router-link></a></h3>
 <div class="tableContainer">
 <table>
           <tr>
@@ -32,6 +32,9 @@ export default {
     };
   },
   methods: {
+    backToCourses(){
+        return 'Back to courses';
+    },
     getSemester(){
         const path = location.pathname;
         const directories = path.split("/");
