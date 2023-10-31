@@ -19,8 +19,3 @@ npm run server
 ```
 npm run serve
 ```
-**Note:** if we observe **suspicious behavior**, the student involved will be called for an interview. Examples of suspicious behavior can be, all the commits happening at the end of the exam or with a non-realistic timeline, too many similarities between projects, etc.
-
-
-
-
