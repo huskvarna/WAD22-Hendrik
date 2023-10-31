@@ -9,7 +9,6 @@ cd <project name>
 ```
 npm install
 ```
-``
 
 ### Run the Back-end
 ```
